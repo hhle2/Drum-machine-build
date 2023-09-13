@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsalmon;
+}
+
+#drum-machine { /* set box of drum machine */
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid yellow;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg, #a1c4fd 0%, #c2e9fb 100%);
+
+}
+#keyboard { /* set box for key */
+    width: 60%; 
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+}
+#mode { /* set box for display and bank */
+    width: 40%;
+    height: auto;
+    margin: 2% 10% 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.drum-pad { /* set button keyboard */
+    width: 24%;
+    height: 100px;
+    margin: 1.5%;
+    border: 0 solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    color: black;
+    font-family: 'Michroma', sans-serif;
+    background-color: lightcyan;
+}
+
+#content { /* set box for display */
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid black;
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 2px 2px #c79081;
+    border-radius: 10px;
+    margin: 26% 0;
+}
+#display {
+    font-family: 'Orbitron', sans-serisf;
+    font-size: 1.3em;
+}
+#switch {
+    width: 40%;
+    height: 30px;
+    border: 3px solid black;
+    
+    
+    
+    
+}
+#bank { /* set button mode */
+    width: 50%;
+    height: 100%;
+
+    color: rgba(0,0,0, 0);
+    padding: 1% 0 1% 1%;
+    background-image: linear-gradient(45deg, #d299c2 0%, #fef9d7 100%);
+    cursor: pointer;
+    
+}
+#name {
+    margin-bottom: 4%; 
+}
+#name p {
+    font-family: 'Orbitron', sans-serif;
+}
+#poweron {
+    width: 40%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#power {
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: antiquewhite;
+    box-shadow: 2px 2px 2px 2px #c79081;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    
+    #drum-machine { 
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 680px;
+        justify-content: center;
+        align-items: center;
+    }
+    #keyboard {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+    }
+    #mode {
+        margin: 0;
+    }
+    #display {
+        font-size: 0.8em;
+    }
+    #poweron {
+        width: 90%;
+        margin-top: 6%;
+    }
+
+}
+@media only screen and (max-width: 680px) {
+    #drum-machine {
+        width: 60%;
+        height: 450px;
+    }
+    .drum-pad {
+        height: 45px;
+        margin-bottom: 3%;
+    }
+    #content {
+        width: 100%;
+        height: 40px;
+    }
+    #display {
+        font-size: 0.6em;
+    }
+    #poweron {
+        width: 80%;
+        margin-top: 20%;
+    }
+    #switch {
+        width: 70%;
+    }
+
+}

@@ -1,0 +1,82 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Drum Machine</title>
+        <link rel="stylesheet" href="css.css">
+        <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    </head>
+    <body>
+        <div id="drum-machine">
+            <div id="keyboard">
+                <button class="drum-pad" id="drumQ" style="background-color: lightcyan;" onclick="clickbutton(0)" onkeydown="clickdown(event)" onmousedown="mousedown(0)" onmouseup="mouseup(0)">Q
+                    <audio class="clip" id="Q" controls hidden autoplay src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"></audio>
+                </button>
+                <button class="drum-pad" id="drumW" style="background-color: lightcyan;" onclick="clickbutton(1)" onkeydown="clickdown(event)" onmousedown="mousedown(1)" onmouseup="mouseup(1)">W
+                    <audio class="clip" id="W" controls hidden autoplay
+                        src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3">
+                    </audio>
+                
+                </button>
+                <button class="drum-pad" id="drumE" style="background-color: lightcyan;" onclick="clickbutton(2)" onkeydown="clickdown(event)" onmousedown="mousedown(2)" onmouseup="mouseup(2)">E
+                    <audio class="clip" id="E" controls hidden autoplay
+                        src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3">
+                    </audio>
+                </button>
+                <button class="drum-pad" id="drumA" style="background-color: lightcyan;" onclick="clickbutton(3)" onkeydown="clickdown(event)" onmousedown="mousedown(3)" onmouseup="mouseup(3)">A
+                    <audio class="clip" id="A" controls hidden autoplay src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3">
+                    </audio>
+                </button>
+                <button class="drum-pad" id="drumS" style="background-color: lightcyan;" onclick="clickbutton(4)" onkeydown="clickdown(event)" onmousedown="mousedown(4)" onmouseup="mouseup(4)">S
+                    <audio class="clip" id="S" controls hidden
+                         src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3">
+                    </audio>
+                </button>
+                <button class="drum-pad" id="drumD" style="background-color: lightcyan;" onclick="clickbutton(5)" onkeydown="clickdown(event)" onmousedown="mousedown(5)" onmouseup="mouseup(5)">D
+                    <audio class="clip" id="D" controls hidden autoplay
+                        src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3">
+                    </audio>
+                </button>
+                <button class="drum-pad" id="drumZ" style="background-color: lightcyan;" onclick="clickbutton(6)" onkeydown="clickdown(event)" onmousedown="mousedown(6)" onmouseup="mouseup(6)">Z
+                    <audio class="clip" id="Z" controls hidden autoplay src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3">
+                    </audio>
+                </button>
+                <button class="drum-pad" id="drumX" style="background-color: lightcyan;" onclick="clickbutton(7)" onkeydown="clickdown(event)" onmousedown="mousedown(7)" onmouseup="mouseup(7)">X
+                    <audio class="clip" id="X" controls hidden autoplay
+                        src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3">
+                    </audio>
+                </button>
+                <button class="drum-pad" id="drumC" style="background-color: lightcyan;" onclick="clickbutton(8)" onkeydown="clickdown(event)" onmousedown="mousedown(8)" onmouseup="mouseup(8)">C
+                    <audio class="clip" id="C" controls hidden autoplay
+                        src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3">
+                    </audio>
+                </button>
+            </div>
+
+            <div id="mode">
+                <div id="poweron">
+                    <button id="power" onclick="downandon()">POWER ON</button>
+                </div>
+                <div id="content">
+                    <strong><p id="display"></p></strong>
+                </div>
+                <div id="name"><p><strong>Bank</strong></p></div>
+                <div id="switch">
+                    <div id="bank" onclick="changemode()"></div>
+                </div>
+            </div>
+        </div>
+
+        
+       
+
+        <script src="app.js" type = "text/javascript" language = "javascript"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
